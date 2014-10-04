@@ -1,0 +1,16 @@
+D:\ClaseAngular\ClaseAngular\bin\ClaseAngular.dll
+D:\ClaseAngular\ClaseAngular\bin\ClaseAngular.pdb
+D:\ClaseAngular\ClaseAngular\obj\Debug\ClaseAngular.csprojResolveAssemblyReference.cache
+D:\ClaseAngular\ClaseAngular\obj\Debug\ClaseAngular.dll
+D:\ClaseAngular\ClaseAngular\obj\Debug\ClaseAngular.pdb
+D:\Proyectos NET\ClaseAngular\ClaseAngular\bin\ClaseAngular.dll
+D:\Proyectos NET\ClaseAngular\ClaseAngular\bin\ClaseAngular.pdb
+D:\Proyectos NET\ClaseAngular\ClaseAngular\obj\Debug\ClaseAngular.csprojResolveAssemblyReference.cache
+D:\Proyectos NET\ClaseAngular\ClaseAngular\obj\Debug\ClaseAngular.dll
+D:\Proyectos NET\ClaseAngular\ClaseAngular\obj\Debug\ClaseAngular.pdb
+C:\Users\fabian202\Desktop\ClaseAngular\ClaseAngular\bin\ClaseAngular.dll.config
+C:\Users\fabian202\Desktop\ClaseAngular\ClaseAngular\bin\ClaseAngular.dll
+C:\Users\fabian202\Desktop\ClaseAngular\ClaseAngular\bin\ClaseAngular.pdb
+C:\Users\fabian202\Desktop\ClaseAngular\ClaseAngular\obj\Debug\ClaseAngular.csprojResolveAssemblyReference.cache
+C:\Users\fabian202\Desktop\ClaseAngular\ClaseAngular\obj\Debug\ClaseAngular.dll
+C:\Users\fabian202\Desktop\ClaseAngular\ClaseAngular\obj\Debug\ClaseAngular.pdb

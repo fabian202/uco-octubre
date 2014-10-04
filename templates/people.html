@@ -1,0 +1,163 @@
+﻿<div class="container-fluid" >
+    <h2>We are the PEOPLE</h2>
+
+    <table class="table" scroll>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="d in dataFilter">
+                <td>{{d.id}}</td>
+                <td colspan="2">{{d.valor}}</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td><button ng-disabled="paginaActual == 0" class="btn btn-info" ng-click="cambiarPagina(paginaActual-1)">Anterior</button></td>
+                <td>
+                    <table cellpadding="4" cellspacing="6">
+                        <tr>
+                            <td ng-repeat="n in [] | range:total">
+                                <button ng-disabled="paginaActual == $index" class="btn btn-link" style="margin:10px" ng-click="cambiarPagina($index)">{{$index + 1}}</button>
+
+                            </td>
+                        </tr>
+                    </table>
+                    {{paginaActual + 1}}/{{total}}
+                </td>
+                <td><button ng-disabled="paginaActual == (total - 1)" class="btn btn-info" ng-click="cambiarPagina(paginaActual+1)">Siguiente</button></td>
+            </tr>
+        </tfoot>
+
+
+
+    </table>
+
+    <form class="form-horizontal" ng-submit="save(persona)">
+
+        <fieldset>
+
+            <!-- Form Name -->
+
+            <legend>New People</legend>
+
+            <!-- Text input-->
+
+            <div class="form-group">
+
+                <label class="col-md-4 control-label" for="name">Name</label>
+
+                <div class="col-md-4">
+
+                    <input ng-model="persona.nombre" id="name" name="name" type="text" placeholder="Enter your Name" class="form-control input-md" required="">
+
+                </div>
+
+            </div>
+
+            <!-- Text input-->
+
+            <div class="form-group">
+
+                <label class="col-md-4 control-label" for="Id">Identification</label>
+
+                <div class="col-md-4">
+
+                    <input ng-model="persona.cedula" id="Id" name="Id" type="text" placeholder="Enter your ID" class="form-control input-md" required="">
+
+                </div>
+
+            </div>
+
+            <!-- Text input-->
+
+            <div class="form-group">
+
+                <label class="col-md-4 control-label" for="date">Date</label>
+
+                <div class="col-md-4">
+
+                    <input ng-model="persona.fecha" id="date" name="date" type="text" placeholder="Enter any Date" class="form-control input-md">
+
+                </div>
+
+            </div>
+
+            <!-- Text input-->
+
+            <div class="form-group">
+
+                <label class="col-md-4 control-label" for="salary">Salary</label>
+
+                <div class="col-md-4">
+
+                    <input ng-model="persona.sueldo" id="salary" name="salary" type="text" placeholder="Enter your Salary" class="form-control input-md">
+
+                </div>
+
+            </div>
+
+            <div class="form-group">
+
+                <label class="col-md-4 control-label" for="cities">Ciudad</label>
+
+                <div class="col-md-4">
+
+                    <select name="cities" id="cities" ng-model="persona.ciudad">
+                        <option ng-repeat="c in cities" value="{{c.id}}">{{c.nombre}}</option>
+                    </select>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Button -->
+
+            <div class="form-group">
+
+                <label class="col-md-4 control-label" for="send"></label>
+
+                <div class="col-md-4">
+
+                    <button id="send" name="send" class="btn btn-info">Save</button>
+
+                </div>
+
+            </div>
+
+        </fieldset>
+
+    </form>
+
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Id</th>
+                <th>Date</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="p in people">
+                <td>{{p.nombre}}</td>
+                <td>{{p.cedula}}</td>
+                <td>{{p.fecha}}</td>
+                <td>{{p.sueldo}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <pre>
+        {{people | json}}
+    </pre>
+
+</div>
